@@ -1,0 +1,40 @@
+{
+	"name": "@alexseitsinger/previous-pathname-middleware",
+	"version": "0.1.0",
+	"description": "Adds the previous pathname to router in redux store.",
+	"main": "dist/main.js",
+	"homepage": "https://github.com/alexseitsinger/previous-pathname-middleware#readme",
+	"author": {
+		"name": "Alex Seitsinger",
+		"email": "alexseitsinger@gmail.com",
+		"url": "https://www.alexseitsinger.com"
+	},
+	"license": "BSD-2-Clause",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alexseitsinger/previous-pathname-middleware.git"
+	},
+	"files": ["dist/", "package.json", "README.md"],
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.2.0",
+		"babel-loader": "^8.0.4",
+		"connected-react-router": "^6.0.0",
+		"enzyme": "^3.7.0",
+		"enzyme-adapter-react-16": "^1.6.0",
+		"jest": "^23.6.0",
+		"webpack": "^4.27.1",
+		"webpack-cli": "^3.1.2"
+	},
+	"dependencies": {
+		"connected-react-router": "^6.0.0",
+		"react": "^16.6.3",
+		"react-router": "^4.4.0-beta.6",
+		"react-redux": "^6.0.0",
+		"redux": "^4.0.1"
+	},
+	"scripts": {
+		"build": "./node_modules/.bin/webpack --config=webpack.config.js",
+		"test": "./node_modules/.bin/jest test"
+	}
+}
