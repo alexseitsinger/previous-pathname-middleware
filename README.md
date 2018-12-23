@@ -27,8 +27,16 @@ function configureStore(history, initialState = {}) {
 In component:
 
 ```javascript
+import React from "react"
+import PropTypes from "prop-types"
+import { connect } from "react-redux"
+
 function App({ previousPathname }) {
 	return <div>App</div>
+}
+
+App.propTypes = {
+	previousPathname: PropTypes.string.isRequired
 }
 
 const mapStateToProps = (state) => {
